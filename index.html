@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>My Bank</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="accounts.html">Accounts</a>
-        <a href="loans.html">Loan</a>
-        <a href="contact.html">Contact</a>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">LIKESH SHANKAR G</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <section class="hero">
-        <h2>Your Trusted Online Bank</h2>
-        <p>Manage money safely and easily,anytime,anywhere.</p>
-    </section>
+  </header>
 
-    <section class="content">
-        <h2 style="text-align: center; margin-bottom: 20px;">Our Services</h2>
-        <div class="box-wrap">
-            <div class="box">
-                <h3>Open an Account</h3>
-                <p>Choose savings,checking, or fixed deposit plans.</p>
-            </div>
-            <div class="box">
-                <h3>Apply for loans</h3>
-                <p>Get personal, education, or home loans easily</p>
-            </div>
-            <div class="box">
-                <h3>24/7</h3>
-                <p></p>
-            </div>
+  <section id="home" class="section home">
+    <div class="content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I’m a passionate web developer.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="content">
+      <img src="" alt="" class=""/>
+      <h2 style="color: black;text-shadow: 3px 3px 5px;">About Me</h2><br>
+      <p>Hi, I’m Likesh Shanker.G, a passionate Front-End Developer focused on building responsive, user-friendly web interfaces. I specialize in turning design concepts into interactive, functional websites using modern technologies like HTML, CSS, JavaScript, and React. Clean code and intuitive UI are at the heart of everything I build.
+
+With a strong foundation in web development and a love for visual design, I bridge the gap between design and functionality. I enjoy collaborating with designers and backend developers to create seamless user experiences that not only look great but also perform smoothly across all devices.<br><br></p>
+<p>Outside of coding, I’m a fan of clean design, creative problem-solving, and tech communities. I love working on side projects, contributing to open-source, and growing as a developer with every project I take on. Let’s build something amazing together!</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="content">
+      <h2 style="color: black;text-shadow: 3px 3px 5px;">Projects</h2>
+      <div class="project-card">
+        <img src="./assets/image.png" alt="Project 1" />
+        <div>
+          <h3>Website</h3>
+          <p>Hey, I’m a front-end developer who builds sleek, fast, and responsive websites. I work with modern tools like React, Tailwind, and JavaScript to turn static designs into dynamic, user-friendly web apps.
+
+ <a href="https://likesh015.github.io/websites/">View More</a></p>
         </div>
-    </section>
-    <footer>&copy;2025 My Bank All rights reserved</footer>
+      </div>
+    </div>
+  </section>
 
+  <section id="resume" class="section resume">
+    <div class="content">
+      <h2>Resume</h2> <br><br>
+      <a href="./assets/Likesh.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="content">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
